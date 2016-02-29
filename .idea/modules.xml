@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/console-build.iml" filepath="$PROJECT_DIR$/console-build.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-common/console-common.iml" filepath="$PROJECT_DIR$/../console-common/console-common.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-dal/console-dal.iml" filepath="$PROJECT_DIR$/../console-dal/console-dal.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-parent/console-parent.iml" filepath="$PROJECT_DIR$/../console-parent/console-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-security/console-security.iml" filepath="$PROJECT_DIR$/../console-security/console-security.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-service/console-service.iml" filepath="$PROJECT_DIR$/../console-service/console-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/../console-web/console-web.iml" filepath="$PROJECT_DIR$/../console-web/console-web.iml" />
+    </modules>
+  </component>
+</project>
