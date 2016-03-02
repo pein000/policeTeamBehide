@@ -90,6 +90,7 @@
             <version>${slf4j.version}</version>
         </dependency>
     </dependencies>
+    <!--构建设置 -->
     <build>
             <plugins>
                 <plugin>
@@ -146,7 +147,55 @@
                 </plugin>
             </plugins>
     </build>
+    <!-- 环境设置-->
+    <!--远程仓库-->
+    <repositories>
+        <repository>
+            <id>central</id>
+            <url>http://120.26.211.158:8081/nexus/content/repositories/central</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </repository>
+    </repositories>
+    <!--插件仓库-->
+    <pluginRepositories>
+        <pluginRepository>
+            <id>central</id>
+            <url>http://120.26.211.158:8081/nexus/content/repositories/central</url>
+            <releases>
+                <enabled>true</enabled>
+            </releases>
+            <snapshots>
+                <enabled>false</enabled>
+            </snapshots>
+        </pluginRepository>
+    </pluginRepositories>
+    <!--分发管理-->
+    <!--<distributionManagement>-->
+        <!--<repository>-->
+            <!--<id>deployRelease</id>-->
+            <!--<url>https://repository.apache.org/content/groups/public/</url>-->
+            <!--<uniqueVersion>true</uniqueVersion>-->
+        <!--</repository>-->
 
+        <!--<snapshotRepository>-->
+            <!--<id>deploySnapshot</id>-->
+            <!--<url>http://repository.apache.org/snapshots/</url>-->
+            <!--<uniqueVersion>true</uniqueVersion>-->
+        <!--</snapshotRepository>-->
+    <!--</distributionManagement>-->
+    <profiles>
+        <profile>
+            <id>dev</id>
+            <activation>
+                <activeByDefault>true</activeByDefault>
+            </activation>
+        </profile>
+    </profiles>
     <modules>
         <module>fee-website</module>
         <module>fee-service</module>
