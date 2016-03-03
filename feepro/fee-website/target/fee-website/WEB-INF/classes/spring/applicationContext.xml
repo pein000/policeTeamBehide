@@ -20,7 +20,17 @@
 
     <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping" />-->
     <!--<bean class="org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerAdapter" />-->
-
+    <bean id="propertyConfigurer" class="org.springframework.beans.factory.config.PropertyPlaceholderConfigurer">
+        <property name="locations">
+            <list>
+                <!-- 这里支持多种寻址方式：classpath和file -->
+                <value>classpath:config_hibernate.properties</value>
+                <!-- 推荐使用file的方式引入，这样可以将配置和代码分离 -->
+                <!--<value>file:/opt/demo/config/demo-mq.properties</value>-->
+                <!--<value>file:/opt/demo/config/demo-remote.properties</value>-->
+            </list>
+        </property>
+    </bean>
 
 
 

@@ -5,7 +5,7 @@
     <!-- [控制台STDOUT] -->
     <appender name="console" class="org.apache.log4j.ConsoleAppender">
         <!--<param name="encoding" value="UTF-8" />-->
-        <param name="target" value="System.out" />
+        <!--<param name="target" value="System.out" />-->
         <layout class="org.apache.log4j.PatternLayout">
             <!--<param name="ConversionPattern" value="[%-5p] %d{yyyy-MM-dd HH:mm:ss,SSS} method:%l%n%m%n" />-->
             <param name="ConversionPattern" value="[%p] %d{yyyy-MM-dd HH:mm:ss} %l: %m%n" />
@@ -39,7 +39,7 @@
     <!--<level value="TRACE" />-->
     <!--<appender-ref ref="console" />-->
     <!--</logger>-->
-    <logger name="org.mybatis.spring"  additivity="false">
+    <logger name="org.mybatis.spring"  additivity="true">
         <level value="info" />
         <appender-ref ref="console" />
     </logger>

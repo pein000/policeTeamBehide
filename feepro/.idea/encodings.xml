@@ -3,8 +3,10 @@
   <component name="Encoding">
     <file url="file://$PROJECT_DIR$" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fee-config" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fee-domain" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fee-repository" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fee-service" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/fee-util" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/fee-website" charset="UTF-8" />
     <file url="PROJECT" charset="UTF-8" />
   </component>

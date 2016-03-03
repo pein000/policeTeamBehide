@@ -3,8 +3,10 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/fee-config/fee-config.iml" filepath="$PROJECT_DIR$/fee-config/fee-config.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fee-domain/fee-domain.iml" filepath="$PROJECT_DIR$/fee-domain/fee-domain.iml" />
       <module fileurl="file://$PROJECT_DIR$/fee-repository/fee-repository.iml" filepath="$PROJECT_DIR$/fee-repository/fee-repository.iml" />
       <module fileurl="file://$PROJECT_DIR$/fee-service/fee-service.iml" filepath="$PROJECT_DIR$/fee-service/fee-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/fee-util/fee-util.iml" filepath="$PROJECT_DIR$/fee-util/fee-util.iml" />
       <module fileurl="file://$PROJECT_DIR$/fee-website/fee-website.iml" filepath="$PROJECT_DIR$/fee-website/fee-website.iml" />
       <module fileurl="file://$PROJECT_DIR$/feepro.iml" filepath="$PROJECT_DIR$/feepro.iml" />
     </modules>

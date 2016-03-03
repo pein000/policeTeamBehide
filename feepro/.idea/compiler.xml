@@ -45,11 +45,27 @@
         <processorPath useClasspath="true" />
         <module name="fee-website" />
       </profile>
+      <profile default="false" name="Annotation profile for fee-domain" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fee-domain" />
+      </profile>
+      <profile default="false" name="Annotation profile for fee-util" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target\generated-test-sources\test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <processorPath useClasspath="true" />
+        <module name="fee-util" />
+      </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="fee-config" target="1.8" />
+      <module name="fee-domain" target="1.8" />
       <module name="fee-repository" target="1.8" />
       <module name="fee-service" target="1.8" />
+      <module name="fee-util" target="1.8" />
       <module name="fee-website" target="1.8" />
       <module name="feepro" target="1.8" />
     </bytecodeTargetLevel>

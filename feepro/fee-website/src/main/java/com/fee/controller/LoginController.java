@@ -2,6 +2,7 @@ package com.fee.controller;
 
 
 import com.fee.service.LoginService;
+import com.fee.vo.UserVo;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.ModelMap;
@@ -19,8 +20,8 @@ public class LoginController {
     private LoginService loginService;
 
     @RequestMapping(value = "/login")
-    public ModelAndView login(ModelMap map) {
-        map.addAttribute("loginResult", loginService.login());
+    public ModelAndView login(UserVo userVo, ModelMap map) {
+        map.addAttribute("user", loginService.login(userVo.getName(),userVo.getPassword()));
         return new ModelAndView("/login/login", map);
     }
 }

@@ -1,6 +1,7 @@
 package com.fee.service;
 
 
+import com.fee.domain.User;
 import com.fee.repository.LoginRepository;
 import org.apache.log4j.Logger;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,8 +18,8 @@ public class LoginService {
     @Autowired
     private LoginRepository loginRepository;
 
-    public boolean login() {
+    public User login(String name, String password) {
         logger.info("LoginService : begin to login from LoginService");
-        return loginRepository.login();
+        return loginRepository.login(name,password);
     }
 }
